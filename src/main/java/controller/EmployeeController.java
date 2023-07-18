@@ -9,32 +9,32 @@ import service.EmployeeService;
 import java.util.List;
 
 @RestController
-@RequestMapping("employees")
+@RequestMapping("employee")
 public class EmployeeController {
     private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService){
-        this.employeeService =employeeService;
+        this.employeeService = employeeService;
     }
 
     @GetMapping("list")
-    public List<Employee> showCounter() {
+    public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
     @GetMapping("/max")
-    public String showeMaxSalaryEmployees(){
+    public String getEmployeeMaxSalary(){
         return employeeService.getEmployeeMaxSalary();
     }
     @GetMapping("/sum")
-    public int showeSumSalaryEmployees(){
+    public int getAllEmployeeSumSalary(){
         return employeeService.getAllEmployeeSumSalary();
     }
     @GetMapping("/min")
-    public String showeMinSalary(){
+    public  String getEmployeeMinSalary(){
         return employeeService.getEmployeeMinSalary();
     }
     @GetMapping("/high-salary")
-    public List<Employee> showeHighSalarySalary(){
+    public List<Employee> getEmployeeHighSalarySalary(){
         return employeeService.getEmployeeHighSalarySalary();
     }
 }

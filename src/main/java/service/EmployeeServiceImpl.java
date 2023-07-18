@@ -7,7 +7,7 @@ import repository.EmployeeRepository;
 import java.util.List;
 
 @Service
-public abstract class EmployeeServiceImpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService {
     private final EmployeeRepository employeeRepository;
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
@@ -18,5 +18,12 @@ public abstract class EmployeeServiceImpl implements EmployeeService {
         }
         public String getEmployeeMinSalary(){ return employeeRepository.getEmployeeMinSalary(); }
         public String getEmployeeMaxSalary(){ return employeeRepository.getEmployeeMaxSalary(); }
-        public List<Employee> getAllEmployees(){ return employeeRepository.getAllEmployees(); }
+
+    @Override
+    public List<Employee> getEmployeeHighSalarySalary() {
+        return null;
+    }
+
+
+    public List<Employee> getAllEmployees(){ return employeeRepository.getAllEmployees(); }
     }
