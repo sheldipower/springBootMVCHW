@@ -1,7 +1,7 @@
-package repository;
+package ru.skypro.lessons.springboot.springbootmvchw.repository;
 
 import org.springframework.stereotype.Repository;
-import pojo.Employee;
+import ru.skypro.lessons.springboot.springbootmvchw.pojo.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

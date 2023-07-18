@@ -1,8 +1,8 @@
-package service;
+package ru.skypro.lessons.springboot.springbootmvchw.service;
 
 import org.springframework.stereotype.Service;
-import pojo.Employee;
-import repository.EmployeeRepository;
+import ru.skypro.lessons.springboot.springbootmvchw.pojo.Employee;
+import ru.skypro.lessons.springboot.springbootmvchw.repository.EmployeeRepository;
 
 import java.util.List;
 

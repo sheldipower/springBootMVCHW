@@ -1,10 +1,10 @@
-package controller;
+package ru.skypro.lessons.springboot.springbootmvchw.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pojo.Employee;
-import service.EmployeeService;
+import ru.skypro.lessons.springboot.springbootmvchw.pojo.Employee;
+import ru.skypro.lessons.springboot.springbootmvchw.service.EmployeeService;
 
 import java.util.List;
 

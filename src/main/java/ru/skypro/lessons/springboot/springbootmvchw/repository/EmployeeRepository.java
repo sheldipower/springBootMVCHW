@@ -1,6 +1,6 @@
-package repository;
+package ru.skypro.lessons.springboot.springbootmvchw.repository;
 
-import pojo.Employee;
+import ru.skypro.lessons.springboot.springbootmvchw.pojo.Employee;
 
 import java.util.List;
 

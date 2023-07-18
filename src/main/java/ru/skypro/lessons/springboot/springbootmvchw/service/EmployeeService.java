@@ -1,6 +1,6 @@
-package service;
+package ru.skypro.lessons.springboot.springbootmvchw.service;
 
-import pojo.Employee;
+import ru.skypro.lessons.springboot.springbootmvchw.pojo.Employee;
 
 import java.util.List;
 
