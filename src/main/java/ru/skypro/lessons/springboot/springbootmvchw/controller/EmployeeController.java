@@ -13,28 +13,33 @@ import java.util.List;
 public class EmployeeController {
     private final EmployeeService employeeService;
 
-    public EmployeeController(EmployeeService employeeService){
-        this.employeeService = employeeService;
-    }
+        public EmployeeController(EmployeeService employeeService) {
+            this.employeeService = employeeService;
+        }
 
-    @GetMapping("list")
-    public List<Employee> getAllEmployees() {
-        return employeeService.getAllEmployees();
-    }
-    @GetMapping("/max")
-    public String getEmployeeMaxSalary(){
-        return employeeService.getEmployeeMaxSalary();
-    }
-    @GetMapping("/sum")
-    public int getAllEmployeeSumSalary(){
-        return employeeService.getAllEmployeeSumSalary();
-    }
-    @GetMapping("/min")
-    public  String getEmployeeMinSalary(){
-        return employeeService.getEmployeeMinSalary();
-    }
-    @GetMapping("/high-salary")
-    public List<Employee> getEmployeeHighSalarySalary(){
-        return employeeService.getEmployeeHighSalarySalary();
+        @GetMapping("list")
+        public List<Employee> showCounter() {
+            return employeeService.getAllEmployees();
+        }
+
+        @GetMapping("/max")
+        public String showeMaxSalaryEmployees() {
+            return employeeService.getEmployeeMaxSalary();
+        }
+
+        @GetMapping("/sum")
+        public int showeSumSalaryEmployees() {
+            return employeeService.getAllEmployeeSumSalary();
+        }
+
+        @GetMapping("/min")
+        public String showeMinSalary() {
+            return employeeService.getEmployeeMinSalary();
+        }
+
+        @GetMapping("/high-salary")
+        public List<Employee> showeHighSalarySalary() {
+            return employeeService.getEmployeeHighSalarySalary();
+        }
     }
 }
