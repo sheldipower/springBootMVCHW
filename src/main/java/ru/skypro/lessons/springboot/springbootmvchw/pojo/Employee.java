@@ -1,18 +1,40 @@
 package ru.skypro.lessons.springboot.springbootmvchw.pojo;
 public class Employee {
-    private String name;
-    private int salary;
+    public class Employee {
+        private static int idGenerator = 1;
+        private int id;
 
-    public Employee(String name, int salary) {
-        this.name = name;
-        this.salary = salary;
-    }
+        private String name;
+        private int salary;
 
-    public String getName() {
-        return name;
-    }
+        public Employee(String name, int salary) {
+            this.id = idGenerator++;
+            this.name = name;
+            this.salary = salary;
+        }
 
-    public int getSalary() {
-        return salary;
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setSalary(int salary) {
+            this.salary = salary;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getSalary() {
+            return salary;
+        }
     }
 }

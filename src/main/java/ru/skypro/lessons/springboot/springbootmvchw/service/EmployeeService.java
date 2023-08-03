@@ -7,9 +7,12 @@ import java.util.List;
 public interface EmployeeService {
     //    String EmployeeMaxSalary(); //верно
 
-    List<Employee> getAllEmployees ();
-    int getAllEmployeeSumSalary ();
-    String getEmployeeMinSalary ();
-    String getEmployeeMaxSalary ();
-    List<Employee> getEmployeeHighSalarySalary();
+
+    Integer getFindAllSalary();
+    Employee getFindEmployeeWithMinSalary();
+    Employee getFindEmployeeWithMaxSalary();
+    List<Employee> getFindEmployeeSalaryMoreThanAverage();
+    void createManyEmployee(List<Employee> employeeList);
+
+    List<Employee> getFindEmployeeSalaryHigherThan(int salary);
 }

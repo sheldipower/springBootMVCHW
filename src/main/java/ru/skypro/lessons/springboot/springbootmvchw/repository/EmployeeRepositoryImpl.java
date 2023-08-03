@@ -16,65 +16,48 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
             new Employee("Вика", 165_000),
             new Employee("Женя", 175_000));
 
-    public int maxSalary() {
-        int max = 0;
-        for (int i = 0; i < employeeList.size(); i++)
-            if (employeeList.get(i).getSalary() > max) {
-                max = employeeList.get(i).getSalary();
-            }
-        return max;
+
+
+    public Integer getFindAllSalary() {
+        return employeeList.stream()
+                .map(x -> x.getSalary())
+                .collect(Collectors.summingInt(Integer::intValue));
     }
 
     @Override
-    public List<Employee> getAllEmployees() {
-        return new ArrayList<>(employeeList);
+    public Employee getFindEmployeeWithMinSalary(){
+        return employeeList.stream()
+                .min(Comparator.comparingInt(Employee::getSalary))
+                .orElseThrow(EmployeeNotFoundExeption::new);
+
+    }
+    @Override
+    public Employee getFindEmployeeWithMaxSalary(){
+        return employeeList.stream()
+                .max(Comparator.comparingInt(Employee::getSalary))
+                .orElseThrow(EmployeeNotFoundExeption::new);
     }
 
     @Override
-    public int getAllEmployeeSumSalary() {
-        int sum = 0;
-        for (int i = 0; i < employeeList.size(); i++) {
-            sum += employeeList.get(i).getSalary();
-        }
+    public List<Employee> getFindEmployeeSalaryMoreThanAverage(){
+        Integer sum = employeeList.stream()
+                .map(x -> x.getSalary())
+                .collect(Collectors.summingInt(Integer::intValue));
+        Integer avg = sum / employeeList.toArray().length;
+        return employeeList.stream()
+                .sorted(Comparator.comparingDouble(Employee::getSalary))
+                .filter(employee -> employee.getSalary() > avg)
+                .collect(Collectors.toList());
 
-        return sum;
-    }
-
-    @Override
-    public String getEmployeeMinSalary() {
-        int min = maxSalary();
-        String minEmployee = null;
-        for (int i = 0; i < employeeList.size(); i++)
-            if (employeeList.get(i).getSalary() < min) {
-                min = employeeList.get(i).getSalary();
-                minEmployee = employeeList.get(i).getName();
-            }
-        return minEmployee;
     }
 
     @Override
-    public String getEmployeeMaxSalary() {
-        int max = 0;
-        String maxEmployee = null;
-        for (int i = 0; i < employeeList.size(); i++)
-            if (employeeList.get(i).getSalary() > max) {
-                max = employeeList.get(i).getSalary();
-                maxEmployee = employeeList.get(i).getName();
-            }
-        return maxEmployee;
-    }
-    @Override
-    public List<Employee> getEmployeeHighSalarySalary() {
-        List<Employee> employeeList = new ArrayList<>();
-        int hightSalary = 40_000;
-        for (int i = 0; i < employeeList.size(); i++) {
-            if (hightSalary < employeeList.get(i).getSalary()) {
-                employeeList.add( new Employee(employeeList.get(i).getName(), employeeList.get(i).getSalary()));
-            }
-        }
-        return employeeList;
-    }
+    public void add(Employee employee) {
+
+        employeeList.add(employee);
 
     }
+
+}
 
 
