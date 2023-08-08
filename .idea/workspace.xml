@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e760a94a-9919-497d-a273-9c8adc14646d" name="Changes" comment="первый коммит домашней работы">
-      <change afterPath="$PROJECT_DIR$/src/main/employee-service.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/EmployeeServiceImpl.java" afterDir="false" />
+    <list default="true" id="e760a94a-9919-497d-a273-9c8adc14646d" name="Changes" comment="Правки домашнего задания.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springBootMVCHW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springBootMVCHW.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/employee-service.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/employee-service.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/repository/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/repository/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/service/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,7 @@
       <list>
         <option value="HTTP Request" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -32,29 +35,79 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="springBootMVC" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sheldipower&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="81330401-9c35-41ae-9b30-5342b521f4c9" />
+        <option name="url" value="https://github.com/sheldipower/springBootMVCHW.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2SgxRgYliRNyviri6pHqejxpaSQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "f6cba6ca1df711963e0d3207e94b60fd"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;springWeb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chino/springBootMVCHW&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f6cba6ca1df711963e0d3207e94b60fd&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.skypro.lessons.springboot.springbootmvchw.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chino\springBootMVCHW\src\main\java\ru\skypro\lessons\springboot\springbootmvchw" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration name="employee-service | Получение суммы зарплат сотрудников" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/ru/skypro/lessons/springboot/springbootmvchw/employee-service.http" requestIdentifier="Получение суммы зарплат сотрудников" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="SpringBootMvchwApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springBootMVCHW" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.skypro.lessons.springboot.springbootmvchw.SpringBootMvchwApplication" />
@@ -72,7 +125,17 @@
       <option name="presentableId" value="Default" />
       <updated>1689582020632</updated>
       <workItem from="1689582023419" duration="3529000" />
-      <workItem from="1689614355619" duration="2086000" />
+      <workItem from="1689614355619" duration="3323000" />
+      <workItem from="1689665177694" duration="65000" />
+      <workItem from="1689700361209" duration="2839000" />
+      <workItem from="1689790095606" duration="388000" />
+      <workItem from="1689863204576" duration="136000" />
+      <workItem from="1690450460873" duration="749000" />
+      <workItem from="1690862937216" duration="9000" />
+      <workItem from="1690968846848" duration="1000" />
+      <workItem from="1690968903040" duration="32000" />
+      <workItem from="1690970706781" duration="71000" />
+      <workItem from="1691039013658" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит домашней работы">
       <created>1689582073882</created>
@@ -81,7 +144,42 @@
       <option name="project" value="LOCAL" />
       <updated>1689582073882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Домашнее задание переделала с нуля, проверьте пожалуйста, сообщите если нужна доработка.">
+      <created>1689616477871</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689616477871</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Правки домашнего задания.">
+      <created>1689701467411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689701467411</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Правки домашнего задания.">
+      <created>1689702123530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689702123530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Правки домашнего задания.">
+      <created>1689702679660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689702679660</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Правки домашнего задания.">
+      <created>1689863222652</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689863222652</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +198,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="первый коммит домашней работы" />
-    <option name="LAST_COMMIT_MESSAGE" value="первый коммит домашней работы" />
+    <MESSAGE value="Домашнее задание переделала с нуля, проверьте пожалуйста, сообщите если нужна доработка." />
+    <MESSAGE value="Правки домашнего задания." />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки домашнего задания." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
