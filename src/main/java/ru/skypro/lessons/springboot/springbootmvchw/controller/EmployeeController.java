@@ -9,36 +9,55 @@ import ru.skypro.lessons.springboot.springbootmvchw.service.EmployeeService;
 import java.util.List;
 
 @RestController
-@RequestMapping("employee")
+@RequestMapping("/employee")
 public class EmployeeController {
+
     private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 
-    @GetMapping("list")
-    public List<Employee> showCounter() {
-        return employeeService.getAllEmployees();
+
+    @GetMapping("/salary/max")
+    public Employee findEmployeeWithMaxSalary() {return employeeService.getFindEmployeeWithMaxSalary(); }
+
+    @GetMapping("/salary/min")
+    public Employee findEmployeeWithMinSalary() {
+        return employeeService.getFindEmployeeWithMinSalary();
     }
 
-    @GetMapping("/max")
-    public String getMaxSalaryEmployees() {
-        return employeeService.getEmployeeMaxSalary();
+    @GetMapping("/salary/sum")
+    public Integer findAllSalary() {
+        return employeeService.getFindAllSalary();
     }
-
-    @GetMapping("/sum")
-    public int getSumSalaryEmployees() {
-        return employeeService.getAllEmployeeSumSalary();
+    @GetMapping("/salary/MoreThanAverage")
+    public List<Employee> getFindEmployeeSalaryMoreThanAverage() {
+        return employeeService.getFindEmployeeSalaryMoreThanAverage();
     }
-
-    @GetMapping("/min")
-    public String getMinSalary() {
-        return employeeService.getEmployeeMinSalary();
+    //Создание множества новых сотрудников;
+    @PostMapping
+    public void createManyEmployee(@RequestBody List<Employee> employeeList){
+        employeeService.createManyEmployee(employeeList);
     }
-
-    @GetMapping("/high-salary")
-    public List<Employee> getHighSalarySalary() {
-        return employeeService.getEmployeeHighSalarySalary();
+    //Редактирование сотрудника с указанным id;
+   @PutMapping("/{id}")
+  public void update(@PathVariable int id, @RequestBody Employee employee){
+       employeeService.update(id, employee);
+   }
+  //Возвращение информации о сотруднике с переданным id;
+    @GetMapping("/{id}")
+    public Employee get(@PathVariable int id) {
+       return employeeService.get(id);
+    }
+    //Удаление сотрудника с переданным id.
+  @DeleteMapping("/{id}")
+    public void delete(@PathVariable int id) {
+       employeeService.delete(id);
+   }
+   //Метод возвращения всех сотрудников, зарплата которых выше переданного параметра salary.
+    @GetMapping("/salaryHigherThan")
+    public List<Employee> getFindEmployeeSalaryHigherThan(@RequestParam int salary) {
+       return employeeService.getFindEmployeeSalaryHigherThan(salary);
     }
 }
